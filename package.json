@@ -1,5 +1,5 @@
 {
-  "name": "MyFirstApplicationBT",
+  "name": "myfirstapplicationbt",
   "version": "1.0.0",
   "org": "my-org",
   "description": "Code pattern for starting a typescript-based microservice",
@@ -40,13 +40,14 @@
     "jaeger-client": "^3.18.0",
     "opentracing": "^0.14.4",
     "pino": "^6.0.0",
+    "react-native-cli": "^2.0.1",
     "rxjs": "^6.5.2",
     "superagent": "^5.2.2",
     "tslib": "^1.11.1",
     "typescript-ioc": "^3.2.1",
     "typescript-rest": "^3.0.1",
     "typescript-rest-ioc": "^1.0.0",
-    "typescript-rest-swagger": "^1.1.1"
+    "typescript-rest-swagger": "^1.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

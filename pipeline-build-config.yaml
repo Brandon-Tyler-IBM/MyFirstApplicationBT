@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  name: brandon-tyler-ibm.myfirstapplicationbt
+  labels:
+    app: MyFirstApplicationBT
+spec:
+  triggers:
+    - type: GitHub
+      github:
+        secret: secret101
+  source:
+    git:
+      uri: 'https://github.com/Brandon-Tyler-IBM/MyFirstApplicationBT.git'
+      ref: master
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile
+      env:
+        - name: CLOUD_NAME
+          value: openshift
+        - name: NAMESPACE
+          value: dev-bt
+        - name: BRANCH
+          value: master
